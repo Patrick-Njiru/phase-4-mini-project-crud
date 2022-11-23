@@ -40,6 +40,7 @@ function NewSpiceForm({ onAddSpice }) {
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Title: </label>
         <input
+          required
           type="text"
           id="title"
           value={formData.title}
@@ -47,6 +48,7 @@ function NewSpiceForm({ onAddSpice }) {
         />
         <label htmlFor="image">Image URL: </label>
         <input
+          required
           type="text"
           id="image"
           value={formData.image}
@@ -54,6 +56,7 @@ function NewSpiceForm({ onAddSpice }) {
         />
         <label htmlFor="notes">Tasting Notes: </label>
         <input
+          required
           type="text"
           id="notes"
           value={formData.notes}
@@ -67,6 +70,7 @@ function NewSpiceForm({ onAddSpice }) {
         />
         <label htmlFor="rating">Rating: </label>
         <input
+          required
           type="number"
           id="rating"
           max="5"
